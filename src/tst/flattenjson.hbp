@@ -1,0 +1,8 @@
+-w3 -es2
+
+-cpp
+
+./hb_flatten_json.prg
+./flattenjson.prg
+
+-o./${hb_name}

@@ -1,0 +1,16 @@
+{
+  "definitions":
+  {
+    "positiveIntegerDefault0":
+    {
+      "allOf":
+      [
+        {
+          "$ref": "#/definitions/positiveInteger"
+        },
+        {
+          "default": 0
+        }
+      ]
+    }
+}

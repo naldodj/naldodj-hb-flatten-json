@@ -1,0 +1,226 @@
+{
+  "$id": "json-schema",
+  "$schema": "json-schema",
+  "description": "Core schema meta-schema",
+  "type": "object",
+  "properties":
+  {
+    "id":
+    {
+      "type": "string"
+    },
+    "$schema":
+    {
+      "type": "string"
+    },
+    "title":
+    {
+      "type": "string"
+    },
+    "description":
+    {
+      "type": "string"
+    },
+    "default": {},
+    "multipleOf":
+    {
+      "type": "number",
+      "minimum": 0,
+      "exclusiveMinimum": true
+    },
+    "maximum":
+    {
+      "type": "number"
+    },
+    "exclusiveMaximum":
+    {
+      "type": "boolean",
+      "default": false
+    },
+    "minimum":
+    {
+      "type": "number"
+    },
+    "exclusiveMinimum":
+    {
+      "type": "boolean",
+      "default": false
+    },
+    "maxLength":
+    {
+      "$ref": "jsonschema_validator_tst_getjsonschematst13_schema_definitions.json#/definitions/positiveInteger"
+    },
+    "minLength":
+    {
+      "$ref": "jsonschema_validator_tst_getjsonschematst13_schema_definitions.json#/definitions/positiveIntegerDefault0"
+    },
+    "pattern":
+    {
+      "type": "string",
+      "format": "regex"
+    },
+    "additionalItems":
+    {
+      "anyOf":
+      [
+        {
+          "type": "boolean"
+        },
+        {
+          "$ref": "#"
+        }
+      ],
+      "default": {}
+    },
+    "items":
+    {
+      "anyOf":
+      [
+        {
+          "$ref": "#"
+        },
+        {
+          "$ref": "jsonschema_validator_tst_getjsonschematst13_schema_definitions.json#/definitions/schemaArray"
+        }
+      ],
+      "default": {}
+    },
+    "maxItems":
+    {
+      "$ref": "jsonschema_validator_tst_getjsonschematst13_schema_definitions.json#/definitions/positiveInteger"
+    },
+    "minItems":
+    {
+      "$ref": "jsonschema_validator_tst_getjsonschematst13_schema_definitions.json#/definitions/positiveIntegerDefault0"
+    },
+    "uniqueItems":
+    {
+      "type": "boolean",
+      "default": false
+    },
+    "maxProperties":
+    {
+      "$ref": "jsonschema_validator_tst_getjsonschematst13_schema_definitions.json#/definitions/positiveInteger"
+    },
+    "minProperties":
+    {
+      "$ref": "jsonschema_validator_tst_getjsonschematst13_schema_definitions.json#/definitions/positiveIntegerDefault0"
+    },
+    "required":
+    {
+      "$ref": "jsonschema_validator_tst_getjsonschematst13_schema_definitions.json#/definitions/stringArray"
+    },
+    "additionalProperties":
+    {
+      "anyOf":
+      [
+        {
+          "type": "boolean"
+        },
+        {
+          "$ref": "#"
+        }
+      ],
+      "default": {}
+    },
+    "definitions":
+    {
+      "type": "object",
+      "additionalProperties":
+      {
+        "$ref": "#"
+      },
+      "default": {}
+    },
+    "properties":
+    {
+      "type": "object",
+      "additionalProperties":
+      {
+        "$ref": "#"
+      },
+      "default": {}
+    },
+    "patternProperties":
+    {
+      "type": "object",
+      "additionalProperties":
+      {
+        "$ref": "#"
+      },
+      "default": {}
+    },
+    "dependencies":
+    {
+      "type": "object",
+      "additionalProperties":
+      {
+        "anyOf":
+        [
+          {
+            "$ref": "#"
+          },
+          {
+            "$ref": "jsonschema_validator_tst_getjsonschematst13_schema_definitions.json#/definitions/stringArray"
+          }
+        ]
+      }
+    },
+    "enum":
+    {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "type":
+    {
+      "anyOf":
+      [
+        {
+          "$ref": "jsonschema_validator_tst_getjsonschematst13_schema_definitions.json#/definitions/simpleTypes"
+        },
+        {
+          "type": "array",
+          "items":
+          {
+            "$ref": "jsonschema_validator_tst_getjsonschematst13_schema_definitions.json#/definitions/simpleTypes"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      ]
+    },
+    "format":
+    {
+      "type": "string"
+    },
+    "allOf":
+    {
+      "$ref": "jsonschema_validator_tst_getjsonschematst13_schema_definitions.json#/definitions/schemaArray"
+    },
+    "anyOf":
+    {
+      "$ref": "jsonschema_validator_tst_getjsonschematst13_schema_definitions.json#/definitions/schemaArray"
+    },
+    "oneOf":
+    {
+      "$ref": "jsonschema_validator_tst_getjsonschematst13_schema_definitions.json#/definitions/schemaArray"
+    },
+    "not":
+    {
+      "$ref": "#"
+    }
+  },
+  "dependencies":
+  {
+    "exclusiveMaximum":
+    [
+      "maximum"
+    ],
+    "exclusiveMinimum":
+    [
+      "minimum"
+    ]
+  },
+  "default": {}
+}

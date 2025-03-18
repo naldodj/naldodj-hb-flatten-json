@@ -1,0 +1,22 @@
+{
+    "type": "object",
+    "required": ["fruit","number","option","status"],
+    "properties": {
+        "fruit": {
+            "type": "string",
+            "enum": ["apple","banana","cherry"]
+        },
+        "number": {
+            "type": "number",
+            "enum": [1,2,3]
+        },
+        "option": {
+            "type": "string",
+            "enum": ["yes","no"]
+        },
+        "status": {
+            "type": ["string","null"],
+            "enum": [null,"active","inactive"]
+        }
+    }
+}

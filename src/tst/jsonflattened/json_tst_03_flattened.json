@@ -1,0 +1,9 @@
+{
+  "definitions": "__$O:1",
+  "definitions.positiveIntegerDefault0": "__$O:1",
+  "definitions.positiveIntegerDefault0.allOf": "__$A:2",
+  "definitions.positiveIntegerDefault0.allOf[0]": "__$O:1",
+  "definitions.positiveIntegerDefault0.allOf[0].$ref": "#/definitions/positiveInteger",
+  "definitions.positiveIntegerDefault0.allOf[1]": "__$O:1",
+  "definitions.positiveIntegerDefault0.allOf[1].default": 0
+}
